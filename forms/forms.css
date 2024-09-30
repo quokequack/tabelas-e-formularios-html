@@ -1,0 +1,152 @@
+body{
+    background-color:#e5e5e5;
+    margin:0;
+    height:140vh;
+    font-family: Suse, sans-serif;
+}
+
+header{
+    color:#e5e5e5;
+    width:100%;
+    background-color:#1a263c;
+    height:6vh;
+    margin:0;
+    display:flex;
+}
+
+
+.titulo{
+    width:50%;
+    justify-content:start;
+    align-items:center;
+    margin-left:4%;
+    font-family:'Suse';
+}
+
+.redes {
+    width:50%;
+    display:flex;
+    justify-content:end;
+    align-items:center;
+}
+
+.redes ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    margin-right:4%;
+}
+
+.redes ul li{
+    margin-right:20%;
+
+}
+
+.redes ul li i{
+    font-size:25px;
+    color:#fff;
+    cursor:pointer;
+}
+main{
+    display:flex;
+    justify-content:Center;
+    align-items:center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    height:74vh;
+    max-width: 60%;
+    margin: 2%;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    background-color: #f0fff0;
+}
+
+.formulario input[type="checkbox"],
+.formulario input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.formulario textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.formulario button {
+    display:flex;
+    align-self:center;
+    justify-content:center;
+    align-items:center;
+    margin-top: 1.5rem;
+    width:40%;
+    height:4vh;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #45a049;
+}
+
+.form {
+    margin-bottom: 2rem;
+}
+
+footer{
+    background-color:#1a263c;
+    font-family:'Suse';
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align: left;
+    color:#fff;
+}
+
+footer p{
+    text-align:center;
+    margin-left:4%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário de Cadastro </title>
+    <link rel="stylesheet" href="forms.css">
+    <link rel="icon" type="image/icon" href="../star.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poiret+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=SUSE:wght@100..800&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92748b14b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h4> Banco de alunos </h4>
+        </div>
+        <div class="redes">
+            <ul>
+                <li><a href="https://github.com/quokequack/tabelas-e-formularios-html"><i class="fa-brands fa-github"></i></a></i></li>
+                <li><a href="https://www.linkedin.com/in/malu-alaquoke-93a031260/"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <div class="formulario">
+                <form>
+                    <div class="form">
+                        <label for="nome"> Nome </label>
+                        <input id="nome" type="text" placeholder="Digite seu nome">
+
+                        <label for="email"> Email </label>
+                        <input id="email" type="email" placeholder="Digite seu email">
+
+                        <label for="senha"> Senha </label>
+                        <input id="senha" type="password" placeholder="Digite sua senha">
+
+                        <label for="data-nascimento"> Data de nascimento </label>
+                        <input id="data-nascimento" type="date">
+
+                        <label for="interesses"> Interesses: </label>
+                        <input id="interesses" type="checkbox"> Backend
+                        <input id="interesses" type="checkbox"> Frontend
+                        <input id="interesses" type="checkbox"> Fullstack (Backend e Frontend)
+                        <input id="interesses" type="checkbox"> Design
+                        <input id="interesses" type="checkbox"> Infraestrutura
+                        <input id="interesses" type="checkbox"> Mobile
+                        <input id="interesses" type="checkbox"> Gamedev
+                    </div>
+                    <div class="form">
+
+                        <label for="cidade"> Cidade </label>
+                        <select id="cidade">
+                            <option value="1">Maceió</option>
+                            <option value="2">Arapiraca</option>
+                        </select>
+
+                        <label for="genero"> Gênero </label>
+                        <input id="genero" type="radio" name="genero"> Feminino
+                        <input id="genero" type="radio" name="genero"> Masculino
+
+                        <label for="produtos"> Quantidade de produtos </label>
+                        <input id="produtos" type="number" placeholder="Digite a quantidade" min="1">
+
+                        <label for="obs"> Observações </label>
+                        <textarea id="obs" placeholder="Digite suas observações"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> Desenvolvido por Alaquoke - 2024 </p>
+    </footer>
+    <script src="alunos.js"></script>
+</body>
+</html>
