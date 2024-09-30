@@ -11,7 +11,6 @@
     <img width="500" src="requisicao-atvd2.png"/>
 
 </div>
-<h2> Funcionalidades obrigatórias </h2>
 <h2> Tecnologias utilizadas </h2>
 <p align="left">
   <a href="https://skillicons.dev">
