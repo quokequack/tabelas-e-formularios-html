@@ -7,8 +7,8 @@
   Requisição do professor:
 </h3>
 <div align="center">
-  <img width="500" src="descricao-atvd1.png"/>
-    <img width="500" src="descricao-atvd2.png"/>
+  <img width="500" src="requisicao-atvd1.png"/>
+    <img width="500" src="requisicao-atvd2.png"/>
 
 </div>
 <h2> Funcionalidades obrigatórias </h2>
