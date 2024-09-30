@@ -41,13 +41,13 @@
                         <input id="data-nascimento" type="date">
 
                         <label for="interesses"> Interesses: </label>
-                        <input id="interesses" type="checkbox"> Backend
-                        <input id="interesses" type="checkbox"> Frontend
-                        <input id="interesses" type="checkbox"> Fullstack (Backend e Frontend)
-                        <input id="interesses" type="checkbox"> Design
-                        <input id="interesses" type="checkbox"> Infraestrutura
-                        <input id="interesses" type="checkbox"> Mobile
-                        <input id="interesses" type="checkbox"> Gamedev
+                        <input class="interesses" type="checkbox"> Backend
+                        <input class="interesses" type="checkbox"> Frontend
+                        <input class="interesses" type="checkbox"> Fullstack (Backend e Frontend)
+                        <input class="interesses" type="checkbox"> Design
+                        <input class="interesses" type="checkbox"> Infraestrutura
+                        <input class="interesses" type="checkbox"> Mobile
+                        <input class="interesses" type="checkbox"> Gamedev
                     </div>
                     <div class="form">
 
@@ -57,9 +57,14 @@
                             <option value="2">Arapiraca</option>
                         </select>
 
+                        <br/>
+
                         <label for="genero"> Gênero </label>
-                        <input id="genero" type="radio" name="genero"> Feminino
-                        <input id="genero" type="radio" name="genero"> Masculino
+                        <input class="genero-feminino" type="radio" name="genero"> Feminino
+                        <input class="genero-masculino" type="radio" name="genero"> Masculino
+                        
+                        <br/>
+                        <br/>
 
                         <label for="produtos"> Quantidade de produtos </label>
                         <input id="produtos" type="number" placeholder="Digite a quantidade" min="1">
@@ -67,7 +72,7 @@
                         <label for="obs"> Observações </label>
                         <textarea id="obs" placeholder="Digite suas observações"></textarea>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button id="enviar" type="submit">Enviar</button>
                 </form>
             </div>
         </div>
@@ -75,6 +80,6 @@
     <footer>
         <p> Desenvolvido por Alaquoke - 2024 </p>
     </footer>
-    <script src="alunos.js"></script>
+    <script src="validacao.js"></script>
 </body>
 </html>
