@@ -4,11 +4,23 @@ function validaCampos(){
     const email = document.querySelector("#email").value;
     const senha = document.querySelector("#senha").value;
     const produtos = document.querySelector("#produtos").value;
+    const interesse = document.querySelectorAll('input[name="interesse"]');
+    var interesses = [];
+    const genero = document.querySelector('input[name="genero"]:checked');
+
+
+    const arrayInteresses = [...interesse];
+    arrayInteresses.forEach(interesse => {
+        if (interesse.checked) {
+            interesses.push(interesse.value);
+        }
+    });
     
-    if(nome == ''|| email == "" || senha == "" || produtos.length <= 0){
-        alert("Campos vazios: nome, email, senha e produtos!")
+    if(nome == ''|| email == "" || senha == "" || produtos <= 0 || interesses.length <= 0 || genero == undefined){
+        alert("Preencha todos os campos!")
         return false;
     }
+    return true;
 
 }
 
@@ -55,6 +67,8 @@ function validaDataNascimento() {
 
 function validaFormulario() {
     if(validaCampos() == true && validaSenha() == true && validaEmail() == true && validaDataNascimento() == true){
+        alert("Cadastro realizado com sucesso!");
+        window.location.reload();
         return true;
     }
     return false;
@@ -64,5 +78,5 @@ const botao = document.querySelector('#enviar');
 botao.addEventListener("click", (event) => {
     event.preventDefault();
     validaFormulario();
-    alert("Cadastro realizado com sucesso!");
+    
 })
